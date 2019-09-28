@@ -10,8 +10,6 @@ file(GLOB TEST_SRC tests/*.c)
 
 message(STATUS ${TEST_SRC})
 
-link_directories(.)
-
 set(${TEST_NAME} "${PROJECT_NAME}_tests_main")
 
 add_library(${PROJECT_NAME} STATIC ${RAFT_SRC})
